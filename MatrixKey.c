@@ -3,7 +3,7 @@
 
 unsigned char MatrixKey()
 {
-	unsigned char MatrixKeyNum;
+	unsigned char MatrixKeyNum = 0;
 	P1 = 0xFF;
 	P1_7 = 0;
 	if(P1_3==0){Delay(20);while(P1_3==0);Delay(20);MatrixKeyNum = 1;}
