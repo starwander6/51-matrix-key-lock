@@ -71,7 +71,7 @@ void LCD_ShowString(unsigned char Line,unsigned char Column,unsigned char *Strin
 {
 	unsigned char i;
 	LCD_SetCursor(Line,Column);
-	for(i=0;String[i]!='0';i++)
+	for(i=0;String[i]!='\0';i++)
 	{
 		LCD_WriteData(String[i]);
 	}
